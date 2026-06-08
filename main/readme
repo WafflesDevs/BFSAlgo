@@ -1,0 +1,10 @@
+The code is intended for 2d Arrays ONLY.
+
+1 = walls
+0 = empty space
+
+In order to add a new maze just make a new dict with a 2d array full of 1s and 0s. The code will tell you the indexes it took to get from start to end. 
+
+This was a small project I made to learn AI! Thanks for using it <3
+
+- Wafflez
