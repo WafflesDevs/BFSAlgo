@@ -1,18 +1,25 @@
 import collections
 from collections import deque
 from queue import PriorityQueue
+import copy
 
 grid = [
-    [0, 0, 1, 0, 0, 0],
-    [1, 0, 1, 0, 1, 0],
-    [0, 0, 0, 0, 1, 0],
-    [0, 1, 1, 0, 0, 0],
-    [0, 0, 0, 1, 1, 0],
-    [0, 1, 0, 0, 0, 0]
+    [0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0],
+    [0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0],
+    [0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0],
+    [1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 0],
+    [0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0],
+    [0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1],
+    [0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1],
+    [1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0],
+    [0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0],
+    [0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0],
+    [0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1],
+    [1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
 ]
 
-start = (0,0)
-goal = (5,5)
+start = (0, 0)
+goal = (11, 11)
 current = start
 path = dict()
 pathway = []
@@ -53,5 +60,20 @@ while cell != start:
 
 pathway.append(start)
 pathway.reverse()
+
+print(path)
+
+
+rows = len(grid)
+cols = len(grid[0])
+
+for i in range(rows):
+    for j in range(cols):
+        if (i, j) in pathway:
+            print("X", end=" ")
+        else:
+            print("*", end=" ")
+    print()
+
 
 print(pathway)
