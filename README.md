@@ -1,15 +1,56 @@
-### Hi there 👋, My name is Ali
-#### I am a python developer who codes with AI
-![I am a python developer who codes with AI](https://i.postimg.cc/jjj4fhL2/github-header-banner.png)
+# 🍞 Bread First Algo
 
-Hey, I'm WafflesDevs 🧇. A rising Python developer exploring AI, building projects, and turning ideas into code one commit at a time.
+> An efficient 2D grid pathfinder powered by Python AI that visualizes the Breadth-First Search (BFS) algorithm to guarantee the absolute shortest route through any maze.
 
-Skills: Python / Beginner Java
+[![Language](https://shields.io)](https://python.org)
+[![License](https://shields.io)](https://opensource.org)
+[![Algorithm](https://shields.io)](#-how-it-works)
 
-- 🌱 I’m currently learning Artifical Intelligence with python 
-- 🤔 I’m looking for help with Artifical Intelligence In Depth 
-- 😄 Pronouns: He/him 
+---
 
+## 📸 Preview
 
-[<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg' alt='github' height='40'>](https://github.com/WafflesDevs)  
+<p align="center">
+  <img src="https://i.postimg.cc/fbXTBGtW/Screenshot-2026-06-09-at-7-59-06-PM.png" width="45%" alt="Maze Generation Preview" />
+  <img src="https://i.postimg.cc/m22kBpqQ/Screenshot-2026-06-09-at-7-58-34-PM.png" width="45%" alt="BFS Pathfinding Visualization" />
+</p>
+
+---
+
+## 💡 Overview
+
+**Bread First Algo** utilizes the **Breadth-First Search (BFS)** algorithm to solve complex 2D array mazes by exploring every possible path level by level. Because BFS systematically validates the closest unvisited positions first, it mathematically guarantees finding the optimal, shortest path from your starting coordinate to the destination. 
+
+---
+
+## ✨ Features
+
+- **Guaranteed Shortest Path**: Employs rigorous BFS queue mechanics to ensure the truest path is found.
+- **Performance Logging**: Tracks exploration step metrics and nodes visited during the search phase.
+
+---
+
+## 🛠️ Tech Stack & Requirements
+
+- **Language:** 🐍 Python 3.10+
+- **Core Modules:** `collections.deque,copy,deque` (for optimized $O(1)$ queue operations)
+- **AI/Math Frameworks:** `numpy` (optional, for matrix transformations)
+
+---
+
+---
+
+## 🧠 How it Works
+
+1. **Queue Initialization**: The starting point is pushed into a First-In, First-Out (FIFO) queue structure.
+2. **Neighbor Checking**: The algorithm checks adjacent positions (Up, Down, Left, Right) level by level.
+3. **Dead-end Pruning**: Visited coordinates are logged instantly to prevent infinite looping and same calculations.
+4. **Backtracking**: Once the destination node is intercepted, the code traces back the exact parent pointers to draft the final path in a array that provides the pathwayt.
+
+---
+
+## 📄 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
 
